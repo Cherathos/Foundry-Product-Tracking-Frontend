@@ -1,0 +1,557 @@
+{
+    "abi": [
+        {
+            "type": "constructor",
+            "inputs": [],
+            "stateMutability": "nonpayable"
+        },
+        {
+            "type": "fallback",
+            "stateMutability": "nonpayable"
+        },
+        {
+            "type": "receive",
+            "stateMutability": "payable"
+        },
+        {
+            "type": "function",
+            "name": "buyProducts",
+            "inputs": [
+                {
+                    "name": "_productIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "_productName",
+                    "type": "string",
+                    "internalType": "string"
+                },
+                {
+                    "name": "_quantity",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "internalType": "string"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "stateMutability": "payable"
+        },
+        {
+            "type": "function",
+            "name": "createProduct",
+            "inputs": [
+                {
+                    "name": "_productName",
+                    "type": "string",
+                    "internalType": "string"
+                },
+                {
+                    "name": "_quantity",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "_price",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "internalType": "string"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "stateMutability": "nonpayable"
+        },
+        {
+            "type": "function",
+            "name": "deleteFulfilledDelivery",
+            "inputs": [
+                {
+                    "name": "_orderIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "_productName",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "outputs": [],
+            "stateMutability": "nonpayable"
+        },
+        {
+            "type": "function",
+            "name": "deleteProduct",
+            "inputs": [
+                {
+                    "name": "_productIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "_productName",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "outputs": [],
+            "stateMutability": "nonpayable"
+        },
+        {
+            "type": "function",
+            "name": "fulfillDelivery",
+            "inputs": [
+                {
+                    "name": "_orderIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "_productName",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "stateMutability": "nonpayable"
+        },
+        {
+            "type": "function",
+            "name": "getAdmin",
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "address",
+                    "internalType": "address"
+                }
+            ],
+            "stateMutability": "view"
+        },
+        {
+            "type": "function",
+            "name": "getDeliveryQuantity",
+            "inputs": [
+                {
+                    "name": "_orderIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "_product",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "stateMutability": "view"
+        },
+        {
+            "type": "function",
+            "name": "getDeliveryStatus",
+            "inputs": [
+                {
+                    "name": "_orderIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "_product",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "internalType": "bool"
+                }
+            ],
+            "stateMutability": "view"
+        },
+        {
+            "type": "function",
+            "name": "getOrderIndex",
+            "inputs": [],
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "stateMutability": "view"
+        },
+        {
+            "type": "function",
+            "name": "getProductName",
+            "inputs": [
+                {
+                    "name": "_productIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "stateMutability": "view"
+        },
+        {
+            "type": "function",
+            "name": "getProductToPrice",
+            "inputs": [
+                {
+                    "name": "_productIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "_product",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "stateMutability": "view"
+        },
+        {
+            "type": "function",
+            "name": "getProductToQuantity",
+            "inputs": [
+                {
+                    "name": "_productIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "_product",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "stateMutability": "view"
+        },
+        {
+            "type": "function",
+            "name": "s_deliveryQuantity",
+            "inputs": [
+                {
+                    "name": "orderIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "productName",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "quantity",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "stateMutability": "view"
+        },
+        {
+            "type": "function",
+            "name": "s_deliveryStatus",
+            "inputs": [
+                {
+                    "name": "orderIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "productName",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "fulfilled",
+                    "type": "bool",
+                    "internalType": "bool"
+                }
+            ],
+            "stateMutability": "view"
+        },
+        {
+            "type": "function",
+            "name": "s_indexToProduct",
+            "inputs": [
+                {
+                    "name": "productIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "productName",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "stateMutability": "view"
+        },
+        {
+            "type": "function",
+            "name": "s_productToPrice",
+            "inputs": [
+                {
+                    "name": "productIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "productName",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "price",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "stateMutability": "view"
+        },
+        {
+            "type": "function",
+            "name": "s_productToQuantity",
+            "inputs": [
+                {
+                    "name": "productIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "productName",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "quantity",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "stateMutability": "view"
+        },
+        {
+            "type": "function",
+            "name": "seeDeliveryStatus",
+            "inputs": [
+                {
+                    "name": "_orderIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "_productName",
+                    "type": "string",
+                    "internalType": "string"
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "bool",
+                    "internalType": "bool"
+                },
+                {
+                    "name": "",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "stateMutability": "view"
+        },
+        {
+            "type": "function",
+            "name": "updateProduct",
+            "inputs": [
+                {
+                    "name": "_productIndex",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "_productName",
+                    "type": "string",
+                    "internalType": "string"
+                },
+                {
+                    "name": "_quantity",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "_price",
+                    "type": "uint256",
+                    "internalType": "uint256"
+                }
+            ],
+            "outputs": [],
+            "stateMutability": "nonpayable"
+        },
+        {
+            "type": "event",
+            "name": "orderPlaced",
+            "inputs": [
+                {
+                    "name": "orderIndex",
+                    "type": "uint256",
+                    "indexed": false,
+                    "internalType": "uint256"
+                },
+                {
+                    "name": "productName",
+                    "type": "string",
+                    "indexed": false,
+                    "internalType": "string"
+                },
+                {
+                    "name": "quantity",
+                    "type": "uint256",
+                    "indexed": false,
+                    "internalType": "uint256"
+                }
+            ],
+            "anonymous": false
+        },
+        {
+            "type": "event",
+            "name": "productCreated",
+            "inputs": [
+                {
+                    "name": "productIndex",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                }
+            ],
+            "anonymous": false
+        },
+        {
+            "type": "event",
+            "name": "productDeleted",
+            "inputs": [
+                {
+                    "name": "productIndex",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                }
+            ],
+            "anonymous": false
+        },
+        {
+            "type": "event",
+            "name": "productUpdated",
+            "inputs": [
+                {
+                    "name": "productIndex",
+                    "type": "uint256",
+                    "indexed": true,
+                    "internalType": "uint256"
+                }
+            ],
+            "anonymous": false
+        },
+        {
+            "type": "error",
+            "name": "NotAdmin",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "Order__NotDelivered",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "Order__NotFound",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "Product__CreateFailed",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "Product__DeleteFailed",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "Product__NotFound",
+            "inputs": []
+        },
+        {
+            "type": "error",
+            "name": "Product__UpdateFailed",
+            "inputs": []
+        }
+    ]
+}
